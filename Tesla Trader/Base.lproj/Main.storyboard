@@ -73,9 +73,106 @@
                     <view key="view" contentMode="scaleToFill" id="CTE-6t-KA0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Fu-yL-cul">
+                                <rect key="frame" x="20" y="60" width="335" height="338"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MODEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZ9-OZ-jNZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="2L9-ec-b7c">
+                                        <rect key="frame" x="0.0" y="25.5" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="MODEL 3"/>
+                                            <segment title="Model S"/>
+                                            <segment title="Model X"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue:" destination="bYM-oC-z8D" eventType="valueChanged" id="zaP-uS-Bqn"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREMIUM UPGRADES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5z-YB-nEM">
+                                        <rect key="frame" x="0.0" y="58.5" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zX6-97-Dyl">
+                                        <rect key="frame" x="0.0" y="84" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="Not Installed"/>
+                                            <segment title="Installed"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue:" destination="bYM-oC-z8D" eventType="valueChanged" id="qeK-K8-0pY"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MILEAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3h-Nh-TyJ">
+                                        <rect key="frame" x="0.0" y="117" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10000" minValue="0.0" maxValue="200000" translatesAutoresizingMaskIntoConstraints="NO" id="lHv-vc-sbx">
+                                        <rect key="frame" x="-2" y="142.5" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="calculateValue:" destination="bYM-oC-z8D" eventType="valueChanged" id="4Z7-US-isl"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONDITION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gc1-KH-mYT">
+                                        <rect key="frame" x="0.0" y="177.5" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="UOw-hj-3BN">
+                                        <rect key="frame" x="0.0" y="203" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="Poor"/>
+                                            <segment title="Okay"/>
+                                            <segment title="Good"/>
+                                            <segment title="Great"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="calculateValue:" destination="bYM-oC-z8D" eventType="valueChanged" id="nyP-Dx-DQ8"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRADE YOUR TESLA FOR..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cph-Lo-JSU">
+                                        <rect key="frame" x="0.0" y="236" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$99,999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfq-Ab-fap">
+                                        <rect key="frame" x="0.0" y="261.5" width="335" height="76.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="64"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" name="TeslaRed"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Fu-yL-cul" firstAttribute="top" secondItem="nt0-hW-Ngs" secondAttribute="top" constant="40" id="LHy-PT-PTK"/>
+                            <constraint firstItem="nt0-hW-Ngs" firstAttribute="trailing" secondItem="3Fu-yL-cul" secondAttribute="trailing" constant="20" id="eJA-zY-V66"/>
+                            <constraint firstItem="3Fu-yL-cul" firstAttribute="leading" secondItem="nt0-hW-Ngs" secondAttribute="leading" constant="20" id="nMa-UW-mDT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nt0-hW-Ngs"/>
                     </view>
+                    <connections>
+                        <outlet property="condition" destination="UOw-hj-3BN" id="xhc-vF-j5A"/>
+                        <outlet property="evaluation" destination="lfq-Ab-fap" id="a6U-kg-b5y"/>
+                        <outlet property="mileage" destination="lHv-vc-sbx" id="VtB-Lw-vQd"/>
+                        <outlet property="mileageLabel" destination="H3h-Nh-TyJ" id="1z9-uL-vic"/>
+                        <outlet property="model" destination="2L9-ec-b7c" id="Wol-dQ-iUy"/>
+                        <outlet property="stackView" destination="3Fu-yL-cul" id="tWC-hy-eQP"/>
+                        <outlet property="upgrades" destination="zX6-97-Dyl" id="MOV-Th-aDO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgj-pg-dJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
