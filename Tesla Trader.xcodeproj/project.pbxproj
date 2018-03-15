@@ -12,6 +12,7 @@
 		F7EEE47D2059F45600231AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EEE47B2059F45600231AEE /* Main.storyboard */; };
 		F7EEE47F2059F45600231AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7EEE47E2059F45600231AEE /* Assets.xcassets */; };
 		F7EEE4822059F45600231AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EEE4802059F45600231AEE /* LaunchScreen.storyboard */; };
+		F7EEE48A2059FB3700231AEE /* Cars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F7EEE4892059FB3700231AEE /* Cars.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F7EEE47E2059F45600231AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7EEE4812059F45600231AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7EEE4832059F45600231AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7EEE4892059FB3700231AEE /* Cars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Cars.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				F7EEE47E2059F45600231AEE /* Assets.xcassets */,
 				F7EEE4802059F45600231AEE /* LaunchScreen.storyboard */,
 				F7EEE4832059F45600231AEE /* Info.plist */,
+				F7EEE4892059FB3700231AEE /* Cars.mlmodel */,
 			);
 			path = "Tesla Trader";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			files = (
 				F7EEE47A2059F45600231AEE /* ViewController.swift in Sources */,
 				F7EEE4782059F45600231AEE /* AppDelegate.swift in Sources */,
+				F7EEE48A2059FB3700231AEE /* Cars.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
