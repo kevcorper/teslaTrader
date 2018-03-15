@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         formatter.numberStyle = .decimal
         formatter.maximumFractionDigits = 0
         let formattedMileage = formatter.string(for: mileage.value) ?? "0"
-        mileageLabel.text = "MILEAGE (\(formattedMileage) miles"
+        mileageLabel.text = "MILEAGE (\(formattedMileage) miles)"
         
         if let prediction = try? carsModel.prediction(
             model: Double(model.selectedSegmentIndex),
